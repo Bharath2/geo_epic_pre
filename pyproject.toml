@@ -59,7 +59,7 @@ requires-python = "==3.11"
 # This is either text indicating the license for the distribution, or a file
 # that contains the license.
 # https://packaging.python.org/en/latest/specifications/core-metadata/#license
-license = {file = "LICENSE.txt"}
+license = {file = "LICENSE"}
 
 # This field adds keywords for your project which will appear on the
 # project page. What does your project relate to?
@@ -176,11 +176,9 @@ test = ["coverage"]
 # maintainers, and where to support the project financially. The key is
 # what's used to render the link text on PyPI.
 [project.urls]
-"Homepage" = "https://github.com/pypa/sampleproject"
-"Bug Reports" = "https://github.com/pypa/sampleproject/issues"
-"Funding" = ""
-"Say Thanks!" = "http://saythanks.io/to/example"
-"Source" = "https://github.com/pypa/sampleproject/"
+"Homepage" = "https://github.com/Bharath2/geo_epic_pre"
+"Bug Reports" = "https://github.com/Bharath2/geo_epic_pre/issues"
+"Source" = "https://github.com/Bharath2/geo_epic_pre/"
 
 # The following would provide a command line executable called `sample`
 # which executes the function `main` from this package when invoked.
@@ -191,6 +189,7 @@ geo_epic = "geoEpic.dispatcher:main"
 # This is configuration specific to the `setuptools` build backend.
 # If you are using a different build backend, you will need to change this.
 [tool.setuptools]
+packages = ["geo_epic"]
 # If there are data files included in your packages that need to be
 # installed, specify them here.
 package-data = {"geo_epic" = ["*.dat"]}
